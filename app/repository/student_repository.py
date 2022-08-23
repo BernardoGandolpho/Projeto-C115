@@ -8,7 +8,7 @@ from ..models import StudentModel
 
 class StudentRepository():
     def __init__(self):
-        self.mongo_url = (f'mongodb+srv://{environ["DB_USER"]}:{environ["DB_PASSWORD"]}@{environ["DB_URI"]}')
+        self.mongo_url = (environ["DB_URI"])
         self.client = MongoClient(self.mongo_url)
         self.db = self.client['inatel']
 
