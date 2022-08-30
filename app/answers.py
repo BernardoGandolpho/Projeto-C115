@@ -1,5 +1,6 @@
 answers = [
     {
+        "id": 0,
         "messages": [
             "Olá! Meu nome é Charlotte!",
             "Estou aqui para auxiliar na consulta de notas dos alunos do Inatel.",
@@ -8,6 +9,7 @@ answers = [
         "possible_answers": []
     },
     {
+        "id": 1,
         "messages": [
             "Certo, vou procurar...",
             "Encontrei! Deseja ver a nota de qual matéria?"
@@ -15,12 +17,14 @@ answers = [
         "possible_answers": []
     },
     {
+        "id": 2,
         "messages": [
             "Qual nota?"
         ],
         "possible_answers": []
     },
     {
+        "id": 3,
         "messages": [
             "Encontrei, estou te mandando..."
         ],
