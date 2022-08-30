@@ -20,6 +20,16 @@ pip install -r requirements.txt
 python main.py
 ```
 
+### Docker
+Para executar o programa em um docker, é necessário ter docker e docker-compose instalados.
+Os comandos para executar são:  
+```
+docker-compose build
+docker-compose up
+```
+
+O conteúdo do banco de dados ficará armazenado em uma pasta com nome db, evitando que o conteúdo seja perdido quando o docker for criado.
+
 ## Iniciar a conversa
 O bot pode ser acessado por meio de requisições HTTP, conforme os exemplos abaixo:
 
