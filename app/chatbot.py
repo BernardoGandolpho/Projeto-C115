@@ -48,6 +48,7 @@ def conversation(
 
         response = answers[1]
         response["possible_answers"] = []
+
         for i in student["subjects"]:
             response["possible_answers"].append(i["subject_id"])
 
@@ -56,6 +57,7 @@ def conversation(
 
         response = answers[2]
         response["possible_answers"] = []
+
         for i in student["subjects"][materia]["grade"].keys():
             response["possible_answers"].append(i)
 
@@ -63,8 +65,9 @@ def conversation(
         student = repository.list_one_student(id)
         grade = student["subjects"][materia]["grade"]
         response = answers[3]
+        response["possible_answers"] = []
         str_grade = list(grade.keys())[nota]
-
+        
         messages = []
         messages.append(response["messages"][0])
         messages.append(
@@ -77,7 +80,9 @@ def conversation(
     return response
 
 
-@ app.get("/database")
+
+# Endpoints para utilizar o banco de dados
+@app.get("/database")
 def list_students(
     repository: StudentRepository = Depends(StudentRepository)
 
