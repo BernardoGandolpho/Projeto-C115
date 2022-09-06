@@ -1,3 +1,5 @@
+# Este arquivo contém os modelos de estudante e matérias para
+# que seja feita a validação antes de enviar para o banco de dados
 from typing import Dict, List, Optional
 
 from pydantic import BaseModel, Field

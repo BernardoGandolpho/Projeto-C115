@@ -1,3 +1,5 @@
+# Este arquivo é responsável por carregar a env
+# contendo a string de conexão e executar a API
 import uvicorn
 
 from dotenv import load_dotenv

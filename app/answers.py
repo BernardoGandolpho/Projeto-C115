@@ -1,3 +1,5 @@
+# Este arquivo contém os textos das respostas
+# que serão carregadas pela API durante a conversa
 answers = [
     {
         "id": 0,
