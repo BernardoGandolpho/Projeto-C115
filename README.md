@@ -19,8 +19,7 @@ python main.py
 ```
 
 ## Como rodar a API com docker
-Para executar o programa em um container, é possível utilizar os comandos do Makefile.
-Para executar a aplicação, basta utilizar o comando ```make up``` que fará a build do container, juntamente com a execução.
+Para executar a aplicação em um container, é possível utilizar os comandos do Makefile, que tornam os comandos mais abstratos e mais simples de utilizar. Os comandos feitos por trás podem ser vistos no arquivo Makefile. O comando ```make up``` que fará a build do container, juntamente com a sua execução.
 
 Para encerrar o container em execução, é possível utilizar o comando ```make stop```.
 
